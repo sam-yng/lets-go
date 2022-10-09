@@ -8,7 +8,9 @@ import '../css/global.css';
 import Arrow from "../assets/misc/svgs/angle-down.svg";
 // import "animate.css";
 
-
+import Facebook from "../assets/misc/svgs/facebook2.svg"
+import Insta from "../assets/misc/svgs/instagram2.svg"
+import Linked from "../assets/misc/svgs/linkedin2.svg"
 
 import { colourOptions } from "./data/data";
 
@@ -51,10 +53,10 @@ export const Layout: React.FC<LayoutProps> = ({
       <div>
 
 
-        <header className="h-28">
+        <header className="h-28 ">
 
           <div className="font-interreg flex justify-end items-center h-28 mr-16 text-[#303F47] opacity-80">
-            <div className='fixed space-x-14 flex flex-row justify-end text-center items-center'>
+            <div className=' space-x-14 flex flex-row justify-end text-center items-center'>
               <div className=''>
                 <button className="text-md flex">Features
                   <img className="h-4 ml-2 mt-1" src={Arrow} />
@@ -110,7 +112,49 @@ export const Layout: React.FC<LayoutProps> = ({
         <main>{children}</main>
 
 
-        <footer className="">
+        <footer className="bg-gradient-to-r from-[#6B7A99] via-[#8EB4CC] to-[#6B7A99] h-[22vh] text-white">
+          <div className='flex flex-row justify-end mr-32'>
+
+            <div className='flex flex-col mr-14 mt-6 space-y-2'>
+              <h1 className='text-[22px] underline underline-offset-4 decoration-2'>Help</h1>
+
+              <Link to="/">
+                <h1 className='text-[14px]'>Help Center</h1>
+              </Link>
+
+              <Link to="/">
+                <h1 className='text-[14px]'>Contact</h1>
+              </Link>
+
+            </div>
+
+            <div className='flex flex-col mt-6 space-y-2 items-left'>
+              <h1 className='text-[22px] underline underline-offset-4 decoration-2'>Socials</h1>
+
+              <div className='flex flex-row'>
+                <img className='h-[18px] mr-2' src={Insta} />
+                <Link to="/">
+                  <h1 className='text-[14px]'>Instagram</h1>
+                </Link>
+              </div>
+
+              <div className='flex flex-row'>
+                <img className='h-[18px] mr-2' src={Facebook} />
+                <Link to="/">
+                  <h1 className='text-[14px]'>Facebook</h1>
+                </Link>
+              </div>
+
+              <div className='flex flex-row'>
+                <img className='h-[18px] mr-2' src={Linked} />
+                <Link to="/">
+                  <h1 className='text-[14px]'>Linkedin</h1>
+                </Link>
+              </div>
+
+            </div>
+
+          </div>
         </footer>
 
       </div>

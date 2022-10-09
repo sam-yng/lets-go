@@ -9,12 +9,12 @@ import Select from 'react-select'
 import { eddOptions, toolOptions } from "../components/data/data";
 import Arrow from "../assets/misc/svgs/angle-down.svg";
 import Arrow2 from "../assets/misc/svgs/arrow-right.svg";
-import Screen1 from "../assets/images/screen1.png"
+import Screen1 from "../assets/images/screen1-cut.png"
 
 
 const SignUp = () => {
     return (
-        <div className='col-bg'>
+        <div className='newcol-bg'>
             <Layout
                 pageTitle="Signup"
                 activePage="/signup"
@@ -22,7 +22,7 @@ const SignUp = () => {
                 headerImg=""
             >
 
-                <body className="h-[90vh]">
+                <body className="h-[87vh]">
 
                     <section className='flex flex-row ' >
                         <div className="bg-white md:ml-20 md:w-[80vh] -mt-7 mx-4 rounded-xl shadow-xl pb-10">
@@ -165,7 +165,7 @@ const SignUp = () => {
                         </div>
 
                         <div className='realtive'>
-                            <img className='absolute -bottom-14 -right-[13vw] over' src={Screen1} />
+                            <img className='absolute bottom-0 right-0 w-[37vw]' src={Screen1} />
                         </div>
 
                     </section>
