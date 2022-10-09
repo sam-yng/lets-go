@@ -8,6 +8,12 @@ import '../css/global.css';
 import Arrow from "../assets/misc/svgs/angle-down.svg";
 // import "animate.css";
 
+
+import {
+  HideOn,
+} from "react-hide-on-scroll";
+
+
 import Facebook from "../assets/misc/svgs/facebook2.svg"
 import Insta from "../assets/misc/svgs/instagram2.svg"
 import Linked from "../assets/misc/svgs/linkedin2.svg"
@@ -52,62 +58,62 @@ export const Layout: React.FC<LayoutProps> = ({
 
       <div>
 
+        <HideOn height={500}>
+          <header className="h-28 z-0">
 
-        <header className="h-28 ">
-
-          <div className="font-interreg flex justify-end items-center h-28 mr-16 text-[#303F47] opacity-80">
-            <div className=' space-x-14 flex flex-row justify-end text-center items-center'>
-              <div className=''>
-                <button className="text-md flex">Features
-                  <img className="h-4 ml-2 mt-1" src={Arrow} />
-                </button>
-              </div>
-
-
-              <div className="text-lg hidden">
-                <Select
-                  closeMenuOnSelect={true}
-                  defaultValue={colourOptions[0]}
-                  options={colourOptions}
-                  classNamePrefix="react-select"
-                  className="react-select--inline"
-                  components={{
-                    IndicatorsContainer: () => null
-                  }}
-                  isSearchable={false}
-                />
-              </div>
-
-              <div className='flex'>
-                <Link to="/">
-                  <h1 className="text-md">Learning</h1>
-                </Link>
-              </div>
-
-              <div className='flex'>
-                <Link to="/">
-                  <h1 className="text-md">Pricing</h1>
-                </Link>
-              </div>
-
-              <div className='shadow-xl rounded-lg hover:scale-105'>
-                <Link to="/signup">
-                  <button
-                    className="text-md text-black border-2 border-transparent shadow-2xl drop-shadow-2xl md:px-4 p-1.5 px-4 hover:scale-100 rounded-lg">
-                    Try Stuvise</button>
-                </Link>
-              </div>
-
-              <div>
+            <div className="font-interreg flex justify-end items-center h-28 mr-16 text-[#303F47] opacity-80">
+              <div className='fixed space-x-14 flex flex-row justify-end text-center items-center'>
+                <div className=''>
+                  <button className="text-md flex">Features
+                    <img className="h-4 ml-2 mt-1" src={Arrow} />
+                  </button>
+                </div>
 
 
+                <div className="text-lg hidden">
+                  <Select
+                    closeMenuOnSelect={true}
+                    defaultValue={colourOptions[0]}
+                    options={colourOptions}
+                    classNamePrefix="react-select"
+                    className="react-select--inline"
+                    components={{
+                      IndicatorsContainer: () => null
+                    }}
+                    isSearchable={false}
+                  />
+                </div>
 
+                <div className='flex'>
+                  <Link to="/">
+                    <h1 className="text-md">Learning</h1>
+                  </Link>
+                </div>
+
+                <div className='flex'>
+                  <Link to="/">
+                    <h1 className="text-md">Pricing</h1>
+                  </Link>
+                </div>
+
+                <div className='rounded-lg hover:scale-105'>
+                  <Link to="/signup">
+                    <button
+                      className="text-md text-black bg-white bg-opacity-10 border-2 border-transparent shadow-10xl md:px-4 p-1.5 px-4 hover:scale-100 rounded-lg">
+                      Try Stuvise</button>
+                  </Link>
+                </div>
+
+                <div>
+
+
+
+                </div>
               </div>
             </div>
-          </div>
 
-        </header>
-
+          </header>
+        </HideOn>
 
         <main>{children}</main>
 
@@ -156,6 +162,7 @@ export const Layout: React.FC<LayoutProps> = ({
 
           </div>
         </footer>
+
 
       </div>
 

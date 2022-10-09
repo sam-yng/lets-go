@@ -149,9 +149,9 @@ const SignUp = () => {
                                     </h1>
 
                                 </div>
-                                <div className='flex shadow-md rounded-lg hover:scale-105 mt-10'>
+                                <div className='flex rounded-lg hover:scale-105 mt-10'>
                                     <Link to="/">
-                                        <button className="text-[17px] text-[#475569] flex border-2 border-transparent shadow-2xl md:px-6 p-1.5 px-6 py-3 bg[#303F47] hover:scale-100 rounded-lg">
+                                        <button className="text-[17px] text-[#475569] flex border-2 border-transparent shadow-10xl md:px-6 p-1.5 px-6 py-3 hover:scale-100 rounded-lg">
                                             Get Started
                                             <span>
                                                 <img className="h-4 mt-1 pl-4" src={Arrow2} />

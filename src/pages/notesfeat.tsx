@@ -44,10 +44,10 @@ const NotesFeat = () => {
                             </div>
 
                             <div className='max-w-[11vw]'>
-                                <div className='shadow-md rounded-lg hover:scale-105 mt-12'>
+                                <div className=' rounded-lg hover:scale-105 mt-12'>
                                     <Link to="/">
                                         <button
-                                            className="text-[17px]  flex text-[#303F47] border-2 border-transparent shadow-2xl drop-shadow-2xl md:px-4 p-1.5 px-5 py-3  hover:scale-100 rounded-lg">
+                                            className="text-[17px]  flex text-[#303F47] border-2 border-transparent shadow-10xl md:px-4 p-1.5 px-5 py-3  hover:scale-100 rounded-lg">
                                             Join the Beta
                                             <span>
                                                 <img className="h-4 mt-1 pl-4" src={Arrow} />

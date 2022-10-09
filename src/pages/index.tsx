@@ -6,6 +6,8 @@ import { Link } from "gatsby"
 
 import Arrow from "../assets/misc/svgs/arrow-right.svg";
 import Screen1 from "../assets/images/screen1.png"
+import Ellipse from "../assets/images/ellipse.png"
+import FileC from "../assets/images/file-check.svg"
 
 import Micro from "../assets/images/indexcol/micro.png"
 
@@ -20,9 +22,10 @@ import Stat2 from "../assets/images/indexcol/stat2.png"
 import Rep1 from "../assets/images/indexcol/rep1.png"
 import Rep2 from "../assets/images/indexcol/rep2.png"
 
+
 const IndexPage = () => {
   return (
-    <section className="newcol-bg">
+    <section className="newcol-bg z-40">
       <Layout
         pageTitle="Home"
         activePage="/home"
@@ -30,10 +33,12 @@ const IndexPage = () => {
         headerImg=""
       >
 
-        <body className=''>
+        <body >
+
+
 
           <section className='grid screen place-items-center mt-24'>
-            <div className='flex flex-col items-center text-center'>
+            <div className='flex flex-col items-center text-center z-40'>
 
               <div className='font-interreg flex text-5xl leading-normal'>
                 <h1>Stuvise.</h1>
@@ -53,10 +58,10 @@ const IndexPage = () => {
                 <p>Your notes & flashcards combined,<br></br>turrbo charged by AI.</p>
               </div>
 
-              <div className='flex shadow-md rounded-lg hover:scale-105 mt-14'>
+              <div className='flex shadow-10xl rounded-lg hover:scale-105 mt-14'>
                 <Link to="/">
                   <button
-                    className="text-[17px] flex text-black border-2 border-transparent shadow-2xl drop-shadow-2xl md:px-6 p-1.5 px-6 py-3 bg[#303F47] hover:scale-100 rounded-lg">
+                    className="text-[17px] bg-white bg-opacity-10 flex text-black border-2 border-transparent  md:px-6 p-1.5 px-6 py-3 hover:scale-100 rounded-lg">
                     Join the Beta<span>
                       <img className="h-4 mt-1 pl-4" src={Arrow} /></span></button>
 
@@ -70,7 +75,7 @@ const IndexPage = () => {
 
 
           <section className='mt-20'>
-            <div className='flex flex-col justify-center items-center'>
+            <div className='flex flex-col justify-center items-center z-20'>
               <div>
                 <img src={Screen1} />
               </div>
@@ -97,11 +102,11 @@ const IndexPage = () => {
 
             <div className='flex flex-col mb-20'>
 
-              <div className='flex flex-row space-x-10'>
+              <div className='flex flex-col md:flex-row space-x-10'>
 
-                <div className="bg-white bg-opacity-80 mt-8 flex flex-col rounded-2xl h-[62vh] w-[55%] drop-shadow-2xl pt-8 overflow-hidden">
+                <div className="bg-white bg-opacity-90 mt-8 flex flex-col rounded-2xl h-[62vh] w-[55%] shadow-10xl pt-8 overflow-hidden">
 
-                  <div className='flex flex-row ml-10'>
+                  <div className='flex md:flex-row ml-10'>
                     <h1 className='font-robreg text-[#303F47] text-[20px]'>Search with Stuvise <br></br>
                       <span className='font-interbod text-[#303F47] text-[30px]'>
                         Cross-Platform Search.
@@ -118,7 +123,7 @@ const IndexPage = () => {
                   <img className='-mt-5' src={Cross1} />
                 </div>
 
-                <div className="bg-white bg-opacity-80 mt-8 flex flex-col rounded-2xl h-[62vh] w-[45%] drop-shadow-2xl pt-8">
+                <div className="bg-white bg-opacity-90 mt-8 flex flex-col rounded-2xl h-[62vh] w-[45%] shadow-10xl pt-8">
 
                   <div className='flex flex-row ml-10'>
                     <h1 className='font-robreg text-[#303F47] text-[20px]'>Flashcards with Stuvise <br></br>
@@ -146,7 +151,7 @@ const IndexPage = () => {
 
               <div className='flex flex-row space-x-10 mt-16'>
 
-                <div className="bg-white bg-opacity-80 flex flex-col rounded-2xl h-[57vh] w-[70%] drop-shadow-2xl pt-8 overflow-hidden">
+                <div className="bg-white bg-opacity-90 flex flex-col rounded-2xl h-[57vh] w-[70%] shadow-10xl pt-8 overflow-hidden">
 
                   <div className='flex flex-row ml-10'>
                     <h1 className='font-robreg text-[#303F47] text-[20px]'>Note-Taking with Stuvise <br></br>
@@ -163,7 +168,7 @@ const IndexPage = () => {
 
                 </div>
 
-                <div className="bg-white bg-opacity-80 flex flex-col rounded-2xl h-[57vh] w-[30%] drop-shadow-2xl pt-8">
+                <div className="bg-white bg-opacity-90 flex flex-col rounded-2xl h-[57vh] w-[30%] shadow-10xl pt-8">
 
                   <div className='flex flex-row ml-10'>
                     <h1 className='font-robreg text-[#303F47] text-[20px]'>Export & Share with Stuvise <br></br>
@@ -185,7 +190,7 @@ const IndexPage = () => {
 
               <div className='flex flex-row space-x-10 mt-16'>
 
-                <div className="bg-white bg-opacity-80 flex flex-col rounded-2xl h-[82.5vh] w-[40%] drop-shadow-2xl pt-8 overflow-hidden">
+                <div className="bg-white bg-opacity-90 flex flex-col rounded-2xl h-[82.5vh] w-[40%] shadow-10xl pt-8 overflow-hidden">
 
                   <div className='flex flex-row ml-10'>
                     <h1 className='font-robreg text-[#303F47] text-[20px]'>Practice with Stuvise <br></br>
@@ -212,7 +217,7 @@ const IndexPage = () => {
                 </div>
 
                 <div className='flex flex-col space-y-10 w-[60%]'>
-                  <div className="bg-white bg-opacity-80 flex flex-col rounded-2xl h-[32vh]  drop-shadow-2xl pt-8">
+                  <div className="bg-white bg-opacity-90 flex flex-col rounded-2xl h-[32vh] shadow-10xl pt-8">
 
                     <div className='flex flex-row ml-10'>
                       <h1 className='font-robreg text-[#303F47] text-[20px]'>Organisation with Stuvise<br></br>
@@ -231,7 +236,7 @@ const IndexPage = () => {
                     </div>
 
                   </div>
-                  <div className="bg-white bg-opacity-80 flex flex-col rounded-2xl h-[46vh]  drop-shadow-2xl pt-8">
+                  <div className="bg-white bg-opacity-90 flex flex-col rounded-2xl h-[46vh] shadow-10xl pt-8">
 
                     <div className='flex flex-row ml-10'>
                       <h1 className='font-robreg text-[#303F47] text-[20px]'>Statistics with Stuvise<br></br>
@@ -264,7 +269,7 @@ const IndexPage = () => {
           <section>
 
             <div className='flex justify-center flex-row '>
-              <div className="bg-white flex rounded-2xl mb-10 w-[80%] flex-row shadow-xl mt-[22vh] tracking-wider pt-10 pb-10">
+              <div className="bg-white bg-opacity-90 flex rounded-2xl mb-10 w-[80%] flex-row shadow-10xl mt-[22vh] tracking-wider pt-10 pb-10">
                 <div className='flex flex-col ml-10'>
                   <h1 className='font-interbod text-[#303F47] text-[30px]'>
                     Join our beta program now!
@@ -276,10 +281,10 @@ const IndexPage = () => {
                   </h1>
                 </div>
 
-                <div className='flex flex-row mt-4'>
+                <div className='flex flex-row mt-5'>
                   <Link to="/">
                     <button
-                      className="text-[17px] ml-[27vw] flex text-[#303F47] border-2 border-transparent shadow-2xl drop-shadow-2xl md:px-6 p-1.5 px-6 py-4 hover:scale-105 rounded-lg">
+                      className="text-[17px] ml-[27vw] flex text-[#303F47] border-2 border-transparent shadow-10xl md:px-6 p-1.5 px-6 py-4 hover:scale-105 rounded-lg">
                       Join the Beta<span>
                         <img className="h-4 mt-1 pl-4" src={Arrow} /></span></button>
 
@@ -289,6 +294,68 @@ const IndexPage = () => {
 
               </div>
             </div>
+
+          </section>
+
+          <section className='mt-[40vh]'>
+            <div className='flex flex-row ml-[10%] space-y-10 items-right'>
+              <div className='flex flex-col font-robreg text-[#303F47] text-[20px] tracking-widest space-y-7'>
+
+                <div className="border-solid border-[#8EB4CC] border-2 md:mx-0 md:w-7 -mb-3 "></div>
+
+                <img className='h-[40px] w-[30px] -mb-4' src={FileC} />
+                <div className='flex flex-row'>
+
+                  <h1 className='font-interbod text-[30px] text-[#303F47]'>
+                    Take Notes With Style.
+                  </h1>
+                </div>
+                <div className='flex flex-row space-x-6 -space-y-2 pt-2'>
+                  <img className='h-[11px] w-[11px]' src={Ellipse} />
+                  <h1>
+                    <span>Purpose built for students - </span>Designed to<br></br>have all the tools, and none of the clutter.
+                  </h1>
+                </div>
+                <div className='flex flex-row space-x-6 -space-y-2'>
+                  <img className='h-[11px] w-[11px]' src={Ellipse} />
+                  <h1>
+                    Catalogue your notes - Our flat file system<br></br>makes organising your study easy.
+                  </h1>
+                </div>
+                <div className='flex flex-row space-x-6 -space-y-2'>
+                  <img className='h-[11px] w-[11px]' src={Ellipse} />
+                  <h1>
+                    Customisability - Shape how you use<br></br>stuvise with statistics and study specific<br></br>folder ladels.
+                  </h1>
+                </div>
+                <div className='flex flex-row space-x-6 -space-y-2'>
+                  <img className='h-[11px] w-[11px]' src={Ellipse} />
+                  <h1>
+                    Desktop app - Download Stuvise onto your<br></br>computer, and have offline acceess.
+                  </h1>
+                </div>
+
+                <div className='flex flex-row mt-5'>
+
+                  <Link to="/">
+                    <button
+                      className="text-[17px] mt-4 flex text-[#303F47] border-2 border-transparent shadow-10xl md:px-7 p-1.5 px-6 py-4 hover:scale-105 rounded-lg">
+                      Learn More<span>
+                        <img className="h-4 mt-1 pl-4" src={Arrow} /></span></button>
+
+                  </Link>
+                </div>
+
+              </div>
+
+              <div className=''>
+                <img className="w-[70%]" src={Screen1} />
+
+              </div>
+
+            </div>
+
+
 
           </section>
 

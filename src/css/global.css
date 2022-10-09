@@ -16,6 +16,22 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.back3-bg {
+    background-image: url(../assets/images/back3.png);
+    background-repeat: no-repeat;
+    background-size: 1250px;
+    background-position: center;
+}
+
+.shape1-bg {
+    background-image: url(../assets/images/shape1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 
