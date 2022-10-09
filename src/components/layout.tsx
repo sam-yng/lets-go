@@ -48,7 +48,7 @@ export const Layout: React.FC<LayoutProps> = ({
 
       </Helmet>
 
-      <div className='col-bg'>
+      <div>
 
 
         <header className="h-28">
