@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet'
 // import { StaticQuery, graphql } from 'gatsby'
 import { Link } from "gatsby"
 import '../css/global.css';
-// import Logo from "../assets/nav/logo.svg";
+import Logo from "../assets/nav/logo.svg";
 import Arrow from "../assets/misc/svgs/angle-down.svg";
 // import "animate.css";
 
@@ -60,6 +60,8 @@ export const Layout: React.FC<LayoutProps> = ({
 
         <HideOn height={500}>
           <header className="h-28 z-0">
+
+
 
             <div className="font-interreg flex justify-end items-center h-28 mr-16 text-[#303F47] opacity-80">
               <div className='fixed space-x-14 flex flex-row justify-end text-center items-center'>
