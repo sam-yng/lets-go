@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet'
 // import { StaticQuery, graphql } from 'gatsby'
 import { Link } from "gatsby"
 import '../css/global.css';
-import Logo from "../assets/nav/logo.svg";
+import Logo from "../assets/images/logoSm.png";
 import Arrow from "../assets/misc/svgs/angle-down.svg";
 // import "animate.css";
 
@@ -14,9 +14,9 @@ import {
 } from "react-hide-on-scroll";
 
 
-import Facebook from "../assets/misc/svgs/facebook2.svg"
-import Insta from "../assets/misc/svgs/instagram2.svg"
-import Linked from "../assets/misc/svgs/linkedin2.svg"
+import Facebook from "../assets/misc/svgs/facebook3.svg"
+import Insta from "../assets/misc/svgs/instagram3.svg"
+import Linked from "../assets/misc/svgs/linkedin3.svg"
 
 import { colourOptions } from "./data/data";
 
@@ -59,13 +59,19 @@ export const Layout: React.FC<LayoutProps> = ({
       <div>
 
         <HideOn height={500}>
-          <header className="h-28 z-0">
+          <header className="h-32 z-0">
+
+            <div className="font-interreg hidden md:flex justify-end items-center h-28 mr-16 text-[#303F47] opacity-80">
 
 
 
-            <div className="font-interreg flex justify-end items-center h-28 mr-16 text-[#303F47] opacity-80">
-              <div className='fixed space-x-14 flex flex-row justify-end text-center items-center'>
-                <div className=''>
+              <div className='space-x-14 flex flex-row items-center'>
+
+                <div className='relative w-[58vw] h-[46px]'>
+                  <img className='absolute left-0 w-[60px] h-[46px]' src={Logo} />
+                </div>
+
+                <div className='hidden'>
                   <button className="text-md flex">Features
                     <img className="h-4 ml-2 mt-1" src={Arrow} />
                   </button>
@@ -86,9 +92,10 @@ export const Layout: React.FC<LayoutProps> = ({
                   />
                 </div>
 
+
                 <div className='flex'>
                   <Link to="/">
-                    <h1 className="text-md">Learning</h1>
+                    <h1 className="text-md">Updates</h1>
                   </Link>
                 </div>
 
@@ -120,24 +127,80 @@ export const Layout: React.FC<LayoutProps> = ({
         <main>{children}</main>
 
 
-        <footer className="bg-gradient-to-r from-[#6B7A99] via-[#8EB4CC] to-[#6B7A99] h-[22vh] text-white">
-          <div className='flex flex-row justify-end mr-32'>
+        <footer className="text-[#303F47] bg-[#F5F5F5]">
+          <section className='bg-gradient-to-r from-[#6B7A99] via-[#8EB4CC] to-[#6B7A99]'>
+            <div className='h-[4px] -mt-3'>
+            </div>
+          </section>
 
-            <div className='flex flex-col mr-14 mt-6 space-y-2'>
-              <h1 className='text-[22px] underline underline-offset-4 decoration-2'>Help</h1>
+          <div className='flex flex-row justify-end space-x-20 mt-16 pb-16 mr-[20vw]'>
+
+            <div className='hidden flex-col space-y-2'>
+              <h1 className='text-[20px]'>Explore</h1>
 
               <Link to="/">
-                <h1 className='text-[14px]'>Help Center</h1>
+                <h1 className='text-[14px]'>Revision</h1>
               </Link>
 
               <Link to="/">
-                <h1 className='text-[14px]'>Contact</h1>
+                <h1 className='text-[14px]'>Flashcards</h1>
               </Link>
 
+              <Link to="/">
+                <h1 className='text-[14px]'>Note-taker</h1>
+              </Link>
+
+              <Link to="/">
+                <h1 className='text-[14px]'>Pricing</h1>
+              </Link>
+
+              <Link to="/">
+                <h1 className='text-[14px]'>How it works</h1>
+              </Link>
+
+              <Link to="/">
+                <h1 className='text-[14px]'>Updates</h1>
+              </Link>
+
+              <Link to="/">
+                <h1 className='text-[14px]'>Blog</h1>
+              </Link>
             </div>
 
-            <div className='flex flex-col mt-6 space-y-2 items-left'>
-              <h1 className='text-[22px] underline underline-offset-4 decoration-2'>Socials</h1>
+            <div className='hidden flex-col space-y-2'>
+              <h1 className='text-[20px]'>Features</h1>
+
+              <Link to="/">
+                <h1 className='text-[14px]'>Search</h1>
+              </Link>
+
+              <Link to="/">
+                <h1 className='text-[14px]'>Flashcards</h1>
+              </Link>
+
+              <Link to="/">
+                <h1 className='text-[14px]'>Note-taker</h1>
+              </Link>
+
+              <Link to="/">
+                <h1 className='text-[14px]'>Sharing</h1>
+              </Link>
+
+              <Link to="/">
+                <h1 className='text-[14px]'>Spaced Repitition</h1>
+              </Link>
+
+              <Link to="/">
+                <h1 className='text-[14px]'>Organisation</h1>
+              </Link>
+
+              <Link to="/">
+                <h1 className='text-[14px]'>Statistics</h1>
+              </Link>
+            </div>
+
+            <div className='hidden flex-col space-y-2 items-left'>
+              <h1 className='text-[20px]'>Socials</h1>
 
               <div className='flex flex-row'>
                 <img className='h-[18px] mr-2' src={Insta} />
@@ -162,7 +225,27 @@ export const Layout: React.FC<LayoutProps> = ({
 
             </div>
 
+            <div className='flex flex-col space-y-2'>
+              <h1 className='text-[20px]'>Connect</h1>
+
+              <Link to="/">
+                <h1 className='text-[14px]'>Help Center</h1>
+              </Link>
+
+              <Link to="/">
+                <h1 className='text-[14px]'>Contact Us</h1>
+              </Link>
+
+            </div>
+
+
+
           </div>
+
+          <div className='font-interreg text-[14px] text-[#303F47] justify-end flex mr-10 -mt-6 pb-6'>
+            <h1>2022 @ Stuvise Inc.</h1>
+          </div>
+
         </footer>
 
 

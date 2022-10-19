@@ -14,6 +14,19 @@ import DeskT from "../assets/misc/svgs/desktop.svg";
 import Search from "../assets/misc/svgs/search.png";
 import Repeat from "../assets/misc/svgs/repeat.svg";
 import Filter from "../assets/misc/svgs/filters.svg";
+import Globe from "../assets/misc/svgs/globe.svg";
+
+import Check4 from "../assets/misc/svgs/check-double-4.svg";
+import Check5 from "../assets/misc/svgs/check-double-5.svg";
+import Check6 from "../assets/misc/svgs/check-double-6.svg";
+
+import File5 from "../assets/misc/svgs/file-check-5.svg";
+import Glass9 from "../assets/misc/svgs/magnifying-glass-9.svg";
+import Wifi2 from "../assets/misc/svgs/wifi-2.svg";
+import Cards7 from "../assets/misc/svgs/cards-blank-7.svg";
+import Repeat4 from "../assets/misc/svgs/repeat-4.svg";
+
+import Logo from "../assets/images/logoSm.png";
 
 import Micro from "../assets/images/indexcol/micro.png"
 import Cross3 from "../assets/images/Cross3.png"
@@ -69,7 +82,7 @@ const IndexPage = () => {
                 <Link to="/">
                   <button
                     className="text-[17px] bg-white bg-opacity-10 flex text-black border-2 border-transparent  md:px-6 p-1.5 px-6 py-3 hover:scale-100 rounded-lg">
-                    Join the Beta<span>
+                    Early Access<span>
                       <img className="h-4 mt-1 pl-4" src={Arrow} /></span></button>
 
                 </Link>
@@ -668,6 +681,148 @@ const IndexPage = () => {
           </section>
 
 
+          <section className='grid screen place-items-center mt-24'>
+            <div className='flex flex-col items-center text-center z-40'>
+
+              <div className='font-interreg flex text-5xl leading-normal'>
+                <h1>Stuvise.</h1>
+              </div>
+              <div className='font-interbod flex text-6xl leading-tight'>
+                <h1>
+                  A Pro Tool for Pro
+                  <br></br>
+                  <span
+                    className='text-transparent bg-clip-text bg-gradient-to-l from-[#6B7A99] via-[#8EB4CC] to-[#6B7A99] '>
+                    Students
+                  </span>
+                </h1>
+              </div>
+
+
+              <div className='flex shadow-10xl rounded-lg hover:scale-105 mt-14'>
+                <Link to="/">
+                  <button
+                    className="text-[17px] bg-white bg-opacity-10 flex text-black border-2 border-transparent  md:px-6 p-1.5 px-6 py-3 hover:scale-100 rounded-lg">
+                    Early Access<span>
+                      <img className="h-4 mt-1 pl-4" src={Arrow} /></span></button>
+
+                </Link>
+              </div>
+
+            </div>
+
+          </section>
+
+
+          <section className='pb-20'>
+            <div className='flex flex-row justify-center pt-16 mb-6'>
+
+              <div className="bg-white bg-opacity-90 flex flex-col rounded-xl shadow-10xl w-[25%] mr-[10vw] pt-6 space-y-4">
+                <div className='flex flex-row ml-8 items-center'>
+                  <img className='h-[55px] w-[42px] mr-6' src={Globe} />
+                  <h1 className='text-[30px] text-[#303F47]'>Early Access</h1>
+                </div>
+                <h1 className='text-[#303F47] opacity-90 ml-8'>Early access is underway.</h1>
+                <h1 className='text-center text-[65px] text-[#303F47]'>Free</h1>
+
+                <div className='flex flex-col font-robreg text-[#303F47] text-[15px] items-left ml-8 space-y-6'>
+
+                  <div className='flex flex-row'>
+                    <img src={Check4} />
+                    <h1 className='ml-5'>Receive access to new features early.</h1>
+                  </div>
+
+                  <div className='flex flex-row'>
+                    <img src={Check5} />
+                    <h1 className='ml-5'>Use Stuvise benefits for free.</h1>
+                  </div>
+
+                  <div className='flex flex-row'>
+                    <img src={Check6} />
+                    <h1 className='ml-5'>Provide the stuvise team with feedback.</h1>
+                  </div>
+
+                </div>
+
+                <div className='flex justify-center pt-6 pb-8'>
+                  <div className='shadow-10xl w-[12vw] rounded-lg hover:scale-105'>
+                    <Link to="/">
+                      <button
+                        className="text-[16px] bg-white bg-opacity-10 flex text-black border-2 border-transparent md:px-6 p-1.5 px-6 py-3 hover:scale-100 rounded-lg">
+                        Join the Beta<span>
+                          <img className="h-4 mt-1 pl-4" src={Arrow} /></span></button>
+
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+
+              <div className="bg-white bg-opacity-90 flex flex-col rounded-xl shadow-10xl w-[25%] pt-6 space-y-4">
+                <div className='flex flex-row ml-8 items-center'>
+                  <img className='h-[42px] w-[53px] mr-6' src={Logo} />
+                  <h1 className='text-[30px] text-[#303F47]'>Pro Version</h1>
+                </div>
+                <h1 className='text-[#303F47] opacity-90 ml-8'>Coming soon.</h1>
+                <h1 className='text-center text-[65px] text-[#303F47]'>$7.99</h1>
+
+                <div className='hidden flex-col font-robreg text-[#303F47] text-[15px] ml-8 space-y-6'>
+
+                  <div className='flex flex-row space-x-[2.3vw]'>
+                    <img src={File5} />
+                    <h1>Note-Taking.</h1>
+                  </div>
+
+                  <div className='flex flex-row space-x-[2vw]'>
+                    <img src={Glass9} />
+                    <h1>Full-Text Search.</h1>
+                  </div>
+
+                  <div className='flex flex-row space-x-[1.7vw]'>
+                    <img src={Wifi2} />
+                    <h1>Offline Access.</h1>
+                  </div>
+
+                  <div className='flex flex-row space-x-[1.5vw]'>
+                    <img src={Cards7} />
+                    <h1>Automatic Flashcards.</h1>
+                  </div>
+
+                  <div className='flex flex-row space-x-[1.5vw]'>
+                    <img src={Repeat4} />
+                    <h1>Spaced Repitition.</h1>
+                  </div>
+
+                </div>
+
+
+                <div className='flex flex-row items-center ml-8'>
+
+                  <div className='flex flex-col space-y-6'>
+                    <img className='h-[26px] w-[26px]' src={File5} />
+                    <img className='h-[26px] w-[26px]' src={Glass9} />
+                    <img className='h-[26px] w-[26px]' src={Wifi2} />
+                    <img className='h-[26px] w-[26px]' src={Cards7} />
+                    <img className='h-[26px] w-[26px]' src={Repeat4} />
+                  </div>
+
+                  <div className='flex flex-col space-y-7 ml-5 font-robreg text-[#303F47] text-[15px]'>
+                    <h1>Note-Taking.</h1>
+                    <h1>Full-Text Search.</h1>
+                    <h1>Offline Access.</h1>
+                    <h1>Automatic Flashcards.</h1>
+                    <h1>Spaced Repitition.</h1>
+                  </div>
+
+                </div>
+
+
+              </div>
+
+            </div>
+
+
+          </section>
 
 
 

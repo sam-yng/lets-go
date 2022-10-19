@@ -6,6 +6,8 @@ import { Link } from "gatsby"
 import LogoSm from "../assets/images/logoSm.png";
 import Select from 'react-select'
 
+
+
 import { eddOptions, toolOptions } from "../components/data/data";
 import Arrow from "../assets/misc/svgs/angle-down.svg";
 import Arrow2 from "../assets/misc/svgs/arrow-right.svg";
@@ -15,8 +17,9 @@ import Screen1 from "../assets/images/screen1-cut.png"
 const SignUp = () => {
     return (
         <div className='newcol-bg'>
+
             <Layout
-                pageTitle="Signup"
+                pageTitle="Sign Up"
                 activePage="/signup"
                 headerTitle="Stuvise"
                 headerImg=""
@@ -173,7 +176,7 @@ const SignUp = () => {
                 </body>
 
 
-            </Layout >
+            </Layout>
         </div>
     );
 };
