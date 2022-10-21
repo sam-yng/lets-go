@@ -7,6 +7,11 @@ import '../css/global.css';
 import Logo from "../assets/images/logoSm.png";
 import Arrow from "../assets/misc/svgs/angle-down.svg";
 // import "animate.css";
+import Collapsible from 'react-collapsible'
+
+import Bars from "../assets/misc/svgs/bars.svg";
+import Right from "../assets/misc/svgs/right-to-bracket.svg";
+import Plus from "../assets/misc/svgs/plus.svg";
 
 
 import {
@@ -58,8 +63,18 @@ export const Layout: React.FC<LayoutProps> = ({
 
       <div>
 
+        <header className='md:hidden block bg-[#D5E0E7] h-12'>
+          <div className='flex flex-row justify-between pt-3 mx-6'>
+
+            <img className='h-[20px] w-[20px]' src={Bars} />
+            <img className='h-[23px] w-[29px]' src={Logo} />
+            <img className='h-[20px] w-[20px]' src={Right} />
+
+          </div>
+        </header>
+
         <HideOn height={500}>
-          <header className="h-32 z-0">
+          <header className="hidden md:block h-32 z-0">
 
             <div className="font-interreg hidden md:flex justify-end items-center h-28 mr-16 text-[#303F47] opacity-80">
 
@@ -127,7 +142,7 @@ export const Layout: React.FC<LayoutProps> = ({
         <main>{children}</main>
 
 
-        <footer className="text-[#303F47] bg-[#F5F5F5]">
+        <footer className="text-[#303F47] bg-[#D5E0E7] hidden md:block">
           <section className='bg-gradient-to-r from-[#6B7A99] via-[#8EB4CC] to-[#6B7A99]'>
             <div className='h-[4px] -mt-3'>
             </div>
@@ -226,7 +241,7 @@ export const Layout: React.FC<LayoutProps> = ({
             </div>
 
             <div className='flex flex-col space-y-2'>
-              <h1 className='text-[20px]'>Connect</h1>
+              <h1 className='text-[20px] font-[600]'>Connect</h1>
 
               <Link to="/">
                 <h1 className='text-[14px]'>Help Center</h1>
@@ -246,10 +261,33 @@ export const Layout: React.FC<LayoutProps> = ({
             <h1>2022 @ Stuvise Inc.</h1>
           </div>
 
+
+
+
+        </footer>
+
+        <footer className='md:hidden block  bg-[#D5E0E7] h-[260px]'>
+          <section className='bg-gradient-to-r from-[#6B7A99] via-[#8EB4CC] to-[#6B7A99]'>
+            <div className='h-[4px] -mt-3'>
+            </div>
+          </section>
+
+          <Collapsible trigger="Connect" className='text-[#303F47] flex flex-row font-[600] w-[75%] ml-10 mt-10 border-off border-[#CACACA] py-2 border-t-2 border-b-2'>
+
+
+            <div className='flex justify-end w-full items-center mr-2'>
+              <img className='w-[13px] h-[18px]' src={Plus} />
+            </div>
+
+
+          </Collapsible>
+          <div className='font-interreg text-[14px] text-[#303F47] justify-end flex mt-[16vh] mr-8'>
+            <h1>2022 @ Stuvise Inc.</h1>
+          </div>
         </footer>
 
 
-      </div>
+      </div >
 
     </>
   );

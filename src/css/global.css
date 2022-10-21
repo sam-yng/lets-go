@@ -35,6 +35,8 @@
 }
 
 
+
+
 @font-face {
     font-family: "interreg";
     src: url("../assets/fonts/Inter-Regular.ttf");
@@ -72,7 +74,7 @@
 /* Tighten up spacing */
 .react-select--inline .react-select__value-container {
     padding: 0;
-    width: 250px;
+
 
 }
 
