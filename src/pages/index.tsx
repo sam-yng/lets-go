@@ -241,7 +241,7 @@ const IndexPage = () => {
 
                 </div>
 
-                <div className='flex flex-col md:space-y-1 mt-8 md:mt-0 md:w-[60%]'>
+                <div className='flex flex-col md:space-y-9 mt-8 md:mt-0 md:w-[60%]'>
                   <div className="bg-white bg-opacity-90 flex flex-col rounded-2xl h-[32vh] shadow-10xl pt-4 md:pt-8">
 
                     <div className='flex flex-row ml-4 md:ml-10'>
@@ -352,43 +352,43 @@ const IndexPage = () => {
                   </div>
                 </section>
 
-                <img className='h-[40px] w-[30px] -mb-4 mt-4' src={FileC} />
+                <img className='md:h-[40px] md:w-[30px] h-[35px] w-[25px] -mb-4 mt-4' src={FileC} />
 
 
-                <h1 className='font-interbod text-[30px] text-[#303F47] mt-6 mb-7'>
+                <h1 className='font-interbod text-[24px] md:text-[30px] text-[#303F47] mt-8 md:mt-6 mb-7'>
                   Take Notes With Style.
                 </h1>
 
-                <div className='space-y-10'>
+                <div className='space-y-10 font-robreg'>
                   <div className='flex flex-row'>
-                    <img className='h-[11px] w-[11px] mr-4' src={Ellipse} />
-                    <h1 className='-mt-2'>
+                    <img className='md:h-[11px] md:w-[11px] h-[9px] w-[9px] mr-4' src={Ellipse} />
+                    <h1 className='md:-mt-2 -mt-1 md:text-[20px] text-[14px]'>
                       <span className='font-extrabold'>Purpose built for students - </span>Designed to<br></br>have all the tools, and none of the clutter.
                     </h1>
                   </div>
 
                   <div className='flex flex-row'>
-                    <img className='h-[11px] w-[11px] mr-4' src={Ellipse} />
-                    <h1 className='-mt-2'>
+                    <img className='md:h-[11px] md:w-[11px] h-[9px] w-[9px] mr-4' src={Ellipse} />
+                    <h1 className='md:-mt-2 -mt-1 md:text-[20px] text-[14px]'>
                       <span className='font-extrabold'>Catalogue your notes - </span>Our flat file system<br></br>makes organising your study easy.
                     </h1>
                   </div>
 
                   <div className='flex flex-row'>
-                    <img className='h-[11px] w-[11px] mr-4' src={Ellipse} />
-                    <h1 className='-mt-2'>
-                      <span className='font-extrabold'>Customisability - </span>Shape how you use<br></br>stuvise with statistics and study specific<br></br>folder ladels.
+                    <img className='md:h-[11px] md:w-[11px] h-[9px] w-[9px] mr-4' src={Ellipse} />
+                    <h1 className='md:-mt-2 -mt-1 md:text-[20px] text-[14px]'>
+                      <span className='font-extrabold'>Customisability. </span>Shape how you use<br></br>stuvise with statistics and study specific<br></br>folder ladels.
                     </h1>
                   </div>
                   <div className='flex flex-row'>
-                    <img className='h-[11px] w-[11px] mr-4' src={Ellipse} />
-                    <h1 className='-mt-2'>
-                      <span className='font-extrabold'>Desktop app - </span>Download Stuvise onto your<br></br>computer, and have offline acceess.
+                    <img className='md:h-[11px] md:w-[11px] h-[9px] w-[9px] mr-4' src={Ellipse} />
+                    <h1 className='md:-mt-2 -mt-1 md:text-[20px] text-[14px]'>
+                      <span className='font-extrabold'>Desktop app. </span>
                     </h1>
                   </div>
                 </div>
 
-                <div className='flex flex-row mt-5'>
+                <div className='hidden flex-row mt-5 md:flex'>
 
                   <Link to="/">
                     <button
@@ -399,65 +399,68 @@ const IndexPage = () => {
                   </Link>
                 </div>
 
-
-
               </div>
 
 
-              <div className='relative h-[40vw] w-[40vw] ml-24 pt-12'>
+              <div className='relative md:block hidden md:h-[40vw] md:w-[40vw] md:ml-24 md:pt-12'>
                 <img src={Screen1} />
-                <img className='absolute left-10 bottom-20' src={Stat2} />
+                <img className='absolute md:left-10 md:bottom-20' src={Stat2} />
               </div>
 
 
             </div>
 
-            <div className="bg-white bg-opacity-90 ml-40 flex flex-col rounded-2xl w-[30%] shadow-10xl mt-[24vh] tracking-wider pt-8 pb-8">
-              <div className='ml-8'>
+            <div className="bg-white bg-opacity-90 md:ml-40 flex flex-col rounded-2xl md:w-[30%] shadow-10xl md:mt-[24vh] mx-4 mt-16 tracking-wider pt-4 pb-4 md:pt-8 md:pb-8">
+              <div className='ml-6 md:ml-8'>
                 <h1 className='font-interbod text-[14px] text-[#303F47]'>Dylan:</h1>
                 <h1 className='font-interreg text-[14px] text-[#303F47]'>Comp Science Student @ UNSW</h1>
-                <p className='font-robreg text-[16px] text-[#303F47] mt-3'>
+                <p className='font-robreg text-[14px] md:text-[16px] text-[#303F47] mt-3'>
                   “Stuvise has a powerful note-taking experience
-                  <br></br>
+                  <br className='hidden md:block'></br>
                   that makes taking & organising lecture notes as
-                  <br></br>
+                  <br className='hidden md:block'></br>
                   easy as possible.”
                 </p>
               </div>
             </div>
 
+            <div className='md:hidden block mx-4 mt-12'>
+              <img src={Screen1} />
 
-            <div className='flex flex-row ml-40 mt-[24vh]'>
+            </div>
+
+
+            <div className='flex flex-col md:flex-row ml-6 md:ml-40 mt-[24vh]'>
               <div className='flex flex-col font-robreg text-[#303F47] text-[20px] tracking-wider mr-10'>
 
 
                 <div className='flex flex-row space-x-6'>
-                  <img className='h-[49px] w-[48px] -mb-4 mt-4' src={Cards} />
-                  <img className='h-[45px] w-[44px] -mb-4 mt-5' src={Micro} />
+                  <img className='md:h-[49px] md:w-[48px] h-[44px] w-[43px] -mb-4 mt-4' src={Cards} />
+                  <img className='md:h-[45px] md:w-[44px] h-[40px] w-[39px] -mb-4 mt-5' src={Micro} />
                 </div>
 
-                <h1 className='font-interbod text-[30px] text-[#303F47] mt-6 mb-7'>
+                <h1 className='font-interbod text-[24px] md:text-[30px] text-[#303F47] mt-8 md:mt-6 mb-7'>
                   Create Flashacards Instantly.
                 </h1>
 
                 <div className='space-y-10'>
                   <div className='flex flex-row'>
-                    <img className='h-[11px] w-[11px] mr-4' src={Ellipse} />
-                    <h1 className='-mt-2'>
+                    <img className='md:h-[11px] md:w-[11px] h-[9px] w-[9px] mr-4' src={Ellipse} />
+                    <h1 className='md:-mt-2 -mt-1 md:text-[20px] text-[14px]'>
                       <span className='font-extrabold'>Super powered AI - </span>Stuvise's AI scans<br></br>your notes & generates flashcards.
                     </h1>
                   </div>
 
                   <div className='flex flex-row'>
-                    <img className='h-[11px] w-[11px] mr-4' src={Ellipse} />
-                    <h1 className='-mt-2'>
+                    <img className='md:h-[11px] md:w-[11px] h-[9px] w-[9px] mr-4' src={Ellipse} />
+                    <h1 className='md:-mt-2 -mt-1 md:text-[20px] text-[14px]'>
                       <span className='font-extrabold'>Convenient Access - </span>Create & Edit<br></br>flashcards alongside your notes.
                     </h1>
                   </div>
 
                   <div className='flex flex-row'>
-                    <img className='h-[11px] w-[11px] mr-4' src={Ellipse} />
-                    <h1 className='-mt-2'>
+                    <img className='md:h-[11px] md:w-[11px] h-[9px] w-[9px] mr-4' src={Ellipse} />
+                    <h1 className='md:-mt-2 -mt-1 md:text-[20px] text-[14px]'>
                       <span className='font-extrabold'>Scheduled Study - </span>Stuvise reminds<br></br>you when & what to study. Updated<br></br>Daily.
                     </h1>
                   </div>
@@ -466,26 +469,25 @@ const IndexPage = () => {
 
               </div>
 
-              <div className='relative h-[40vw] w-[40vw] ml-24 pt-12'>
+              <div className='md:block hidden relative h-[40vw] w-[40vw] ml-24 pt-12'>
                 <img src={Screen1} />
               </div>
 
             </div>
 
-            <div className="bg-white bg-opacity-90 ml-40 flex flex-col rounded-2xl w-[30%] shadow-10xl tracking-wider pt-6 pb-8">
-              <div className='ml-8'>
+            <div className="bg-white bg-opacity-90 md:ml-40 flex flex-col rounded-2xl md:w-[30%] shadow-10xl md:mt-[24vh] mx-4 mt-16 tracking-wider pt-4 pb-4 md:pt-8 md:pb-8">
+              <div className='ml-6 md:ml-8'>
                 <h1 className='font-interbod text-[14px] text-[#303F47]'>Amy:</h1>
                 <h1 className='font-interreg text-[14px] text-[#303F47]'>Medicine Student @ UNSW</h1>
-                <p className='font-robreg text-[16px] text-[#303F47] mt-3'>
+                <p className='font-robreg text-[14px] md:text-[16px] text-[#303F47] mt-3'>
                   “Stuvise has completely changed the way I
                   <br></br>
                   study. As a medicine student, I have to remember
-                  <br></br>
+                  <br className='md:block hidden'></br>
                   and learn a lot of different concepts, very
-                  <br></br>
                   quickly."
                 </p>
-                <p className='font-robreg text-[16px] text-[#303F47] mt-4'>
+                <p className='font-robreg text-[14px] md:text-[16px] text-[#303F47] mt-4'>
                   "I can't comprehend how it generates study
                   <br></br>
                   cards from my notes so well."
@@ -494,23 +496,23 @@ const IndexPage = () => {
             </div>
 
 
-            <div className='flex flex-row ml-40 mt-[24vh]'>
+            <div className='flex flex-col md:flex-row ml-6 md:ml-40 mt-20 md:mt-[24vh]'>
               <div className='flex flex-col font-robreg text-[#303F47] text-[20px] tracking-wider mr-10'>
 
 
                 <div className='flex flex-row space-x-6'>
-                  <img className='h-[49px] w-[48px] -mb-4 mt-4' src={DeskT} />
-                  <img className='h-[45px] w-[44px] -mb-4 mt-5' src={Micro} />
+                  <img className='md:h-[49px] md:w-[48px] h-[44px] w-[43px] -mb-4 mt-4' src={DeskT} />
+                  <img className='md:h-[45px] md:w-[44px] h-[40px] w-[39px] -mb-4 mt-4 md:mt-5' src={Micro} />
                 </div>
 
-                <h1 className='font-interbod text-[30px] text-[#303F47] mt-6 mb-7'>
-                  Stuvise tells you what to study<br></br>& when to study.
+                <h1 className='font-interbod text-[24px] md:text-[30px] text-[#303F47] mt-6 mb-7'>
+                  Stuvise tells you what to study<br className='md:block hidden'></br>& when to study.
                 </h1>
 
                 <div className='space-y-10'>
                   <div className='flex flex-row'>
-                    <img className='h-[11px] w-[11px] mr-4' src={Ellipse} />
-                    <h1 className='-mt-2'>
+                    <img className='md:h-[11px] md:w-[11px] h-[9px] w-[9px] mr-4' src={Ellipse} />
+                    <h1 className='md:-mt-2 -mt-1 md:text-[20px] text-[14px]'>
                       <span className='font-extrabold'>Spaced repitition - </span>
                       Stuvise uses an algorithim<br></br>that has been proven to improve long-term
                       <br></br>knowledge by 200%.
@@ -518,22 +520,22 @@ const IndexPage = () => {
                   </div>
 
                   <div className='flex flex-row'>
-                    <img className='h-[11px] w-[11px] mr-4' src={Ellipse} />
-                    <h1 className='-mt-2'>
+                    <img className='md:h-[11px] md:w-[11px] h-[9px] w-[9px] mr-4' src={Ellipse} />
+                    <h1 className='md:-mt-2 -mt-1 md:text-[20px] text-[14px]'>
                       <span className='font-extrabold'>Scheduled Revision - </span>Stuviser will remind you<br></br>when flashcards are due.
                     </h1>
                   </div>
 
                   <div className='flex flex-row'>
-                    <img className='h-[11px] w-[11px] mr-4' src={Ellipse} />
-                    <h1 className='-mt-2'>
+                    <img className='md:h-[11px] md:w-[11px] h-[9px] w-[9px] mr-4' src={Ellipse} />
+                    <h1 className='md:-mt-2 -mt-1 md:text-[20px] text-[14px]'>
                       <span className='font-extrabold'>Practice - </span>Rank cards dependent on their recall<br></br>difficulty.
                     </h1>
                   </div>
 
                   <div className='flex flex-row'>
-                    <img className='h-[11px] w-[11px] mr-4' src={Ellipse} />
-                    <h1 className='-mt-2'>
+                    <img className='md:h-[11px] md:w-[11px] h-[9px] w-[9px] mr-4' src={Ellipse} />
+                    <h1 className='md:-mt-2 -mt-1 md:text-[20px] text-[14px]'>
                       <span className='font-extrabold'>Learning Science - </span>Review content when you're<br></br>
                       close to forgetting it, training your brain to retain<br></br>
                       information for longer periods of time with less<br></br>
@@ -543,7 +545,7 @@ const IndexPage = () => {
 
                 </div>
 
-                <div className='flex flex-row mt-5'>
+                <div className='md:flex hidden flex-row mt-5'>
 
                   <Link to="/">
                     <button
@@ -558,36 +560,36 @@ const IndexPage = () => {
 
             </div>
 
-            <div className='flex flex-row ml-40 mt-[24vh]'>
+            <div className='flex flex-row ml-6 md:ml-40 mt-20 md:mt-[24vh]'>
               <div className='flex flex-col font-robreg text-[#303F47] text-[20px] tracking-wider mr-10'>
 
 
                 <div className='flex flex-row space-x-4'>
-                  <img className='h-[40px] w-[30px] -mb-4 mt-5' src={FileC} />
-                  <img className="h-4 mt-8" src={Arrow} />
-                  <img className='h-[49px] w-[48px] -mb-4 mt-4' src={Cards} />
-                  <img className='h-[45px] w-[44px] -mb-4 mt-5' src={Micro} />
+                  <img className='md:h-[40px] md:w-[30px] h-[35px] w-[25px] -mb-4 mt-4' src={FileC} />
+                  <img className="h-4 mt-7 md:mt-8" src={Arrow} />
+                  <img className='md:h-[49px] md:w-[48px] h-[44px] w-[43px] -mb-4 mt-3 md:mt-4' src={Cards} />
+                  <img className='md:h-[45px] md:w-[44px] h-[40px] w-[39px] -mb-4 mt-4 md:mt-5' src={Micro} />
                 </div>
 
-                <h1 className='font-interreg text-[15px] text-[#303F47] mt-7'>
+                <h1 className='font-interreg text-[13px] md:text-[15px] text-[#303F47] mt-7'>
                   Combinging Notes & Flashcards
                 </h1>
 
-                <h1 className='font-interbod text-[30px] text-[#303F47] mt-3 mb-7'>
+                <h1 className='font-interbod text-[24px] md:text-[30px] text-[#303F47] mt-3 mb-7'>
                   The Flashcard Screen.
                 </h1>
 
                 <div className='space-y-10'>
                   <div className='flex flex-row'>
-                    <img className='h-[11px] w-[11px] mr-4' src={Ellipse} />
-                    <h1 className='-mt-2'>
+                    <img className='md:h-[11px] md:w-[11px] h-[9px] w-[9px] mr-4' src={Ellipse} />
+                    <h1 className='md:-mt-2 -mt-1 md:text-[20px] text-[14px]'>
                       <span className='font-extrabold'>Greater Control - </span>Create multi-note flashcard<br></br>decks, that are specific to your learning goals.
                     </h1>
                   </div>
 
                   <div className='flex flex-row'>
-                    <img className='h-[11px] w-[11px] mr-4' src={Ellipse} />
-                    <h1 className='-mt-2'>
+                    <img className='md:h-[11px] md:w-[11px] h-[9px] w-[9px] mr-4' src={Ellipse} />
+                    <h1 className='md:-mt-2 -mt-1 md:text-[20px] text-[14px]'>
                       <span className='font-extrabold'>Scheduled Revision - </span>Update your decks with<br></br>new cards & your schedule won't be affected.
                     </h1>
                   </div>
@@ -602,35 +604,35 @@ const IndexPage = () => {
 
             </div>
 
-            <div className='flex flex-row ml-40 mt-[24vh]'>
+            <div className='flex flex-col md:flex-row ml-6 md:ml-40 mt-20 md:mt-[24vh]'>
               <div className='flex flex-col font-robreg text-[#303F47] text-[20px] tracking-wider mr-10'>
 
 
                 <div className='flex flex-row space-x-6'>
 
-                  <img className='h-[49px] w-[48px] -mb-4 mt-4' src={Cards} />
-                  <img className='h-[45px] w-[44px] -mb-4 mt-5' src={Micro} />
+                  <img className='md:h-[49px] md:w-[48px] h-[44px] w-[43px] -mb-4 mt-3 md:mt-4' src={Cards} />
+                  <img className='md:h-[45px] md:w-[44px] h-[40px] w-[39px] -mb-4 mt-4 md:mt-5' src={Micro} />
                 </div>
 
-                <h1 className='font-interreg text-[15px] text-[#303F47] mt-7'>
+                <h1 className='font-interreg text-[13px] md:text-[15px] text-[#303F47] mt-7'>
                   Powerful Learning Insights
                 </h1>
 
-                <h1 className='font-interbod text-[30px] text-[#303F47] mt-3 mb-7'>
+                <h1 className='font-interbod text-[24px] md:text-[30px] text-[#303F47] mt-3 mb-7'>
                   The Flashcard Screen.
                 </h1>
 
                 <div className='space-y-10'>
                   <div className='flex flex-row'>
-                    <img className='h-[11px] w-[11px] mr-4' src={Ellipse} />
-                    <h1 className='-mt-2'>
+                    <img className='md:h-[11px] md:w-[11px] h-[9px] w-[9px] mr-4' src={Ellipse} />
+                    <h1 className='md:-mt-2 -mt-1 md:text-[20px] text-[14px]'>
                       <span className='font-extrabold'>Learning Stats - </span>Track past learning trends &<br></br>monitor what cards are due next.
                     </h1>
                   </div>
 
                   <div className='flex flex-row'>
-                    <img className='h-[11px] w-[11px] mr-4' src={Ellipse} />
-                    <h1 className='-mt-2'>
+                    <img className='md:h-[11px] md:w-[11px] h-[9px] w-[9px] mr-4' src={Ellipse} />
+                    <h1 className='md:-mt-2 -mt-1 md:text-[20px] text-[14px]'>
                       <span className='font-extrabold'>Notes & Decks - </span>Filter cards between decks
                       <br></br>
                       & notes, helping you find content specific
@@ -649,27 +651,27 @@ const IndexPage = () => {
 
             </div>
 
-            <div className='flex flex-row ml-40 mt-[24vh]'>
+            <div className='flex flex-col md:flex-row ml-6 md:ml-40 mt-20 md:mt-[24vh]'>
               <div className='flex flex-col font-robreg text-[#303F47] text-[20px] tracking-wider mr-10'>
 
 
                 <div className='flex flex-row space-x-6'>
 
-                  <img className='h-[40px] w-[39px] -mb-4 mt-5' src={Search} />
-                  <img className='h-[45px] w-[44px] -mb-4 mt-5' src={Micro} />
+                  <img className='md:h-[40px] md:w-[39px] h-[35px] w-[34px] -mb-4 mt-5' src={Search} />
+                  <img className='md:h-[45px] md:w-[44px] h-[40px] w-[39px] -mb-4 mt-4 md:mt-5' src={Micro} />
                 </div>
 
-                <h1 className='font-interreg text-[15px] text-[#303F47] mt-7'>
+                <h1 className='font-interreg text-[13px] md:text-[15px] text-[#303F47] mt-7'>
                   Search with Stuvise
                 </h1>
 
-                <h1 className='font-interbod text-[30px] text-[#303F47] mt-3 mb-7'>
+                <h1 className='font-interbod text-[24px] md:text-[30px] text-[#303F47] mt-3 mb-7'>
                   Google but it's Stuvise.
                 </h1>
 
                 <div className='space-y-8'>
 
-                  <h1 className='-mt-2'>
+                  <h1 className='md:-mt-2 -mt-1 md:text-[20px] text-[14px]'>
                     Stuvise's inbuilt search engine retrieve's
                     <br></br>
                     information when you want it, right where
@@ -679,22 +681,22 @@ const IndexPage = () => {
 
 
                   <div className='flex flex-row'>
-                    <img className='h-[32px] w-[32px] mr-4' src={Filter} />
-                    <h1 >
+                    <img className='md:h-[32px] md:w-[32px] h-[20px] w-[21px] mr-4' src={Filter} />
+                    <h1 className='md:text-[20px] text-[14px]'>
                       Filter your results.
                     </h1>
                   </div>
 
                   <div className='flex flex-row'>
-                    <img className='h-[32px] w-[32px] mr-4' src={Repeat} />
-                    <h1 >
+                    <img className='md:h-[32px] md:w-[32px] h-[20px] w-[21px] mr-4' src={Repeat} />
+                    <h1 className='md:text-[20px] text-[14px]'>
                       Repeat previous searches.
                     </h1>
                   </div>
 
                   <div className='flex flex-row'>
-                    <img className='h-[32px] w-[32px] mr-4' src={Cards} />
-                    <h1 >
+                    <img className='md:h-[32px] md:w-[32px] h-[20px] w-[21px] mr-4' src={Cards} />
+                    <h1 className='md:text-[20px] text-[14px]'>
                       Search through your flashcards.
                     </h1>
                   </div>
@@ -703,7 +705,7 @@ const IndexPage = () => {
 
               </div>
 
-              <div className=' h-[40vw] w-[40vw] ml-28 '>
+              <div className='md:h-[40vw] md:w-[40vw] md:ml-28 pt-6 md:pt-0'>
                 <img src={Cross3} />
               </div>
 
@@ -733,7 +735,7 @@ const IndexPage = () => {
               <div className='flex shadow-10xl rounded-lg hover:scale-105 mt-14'>
                 <Link to="/">
                   <button
-                    className="text-[17px] bg-white bg-opacity-10 flex text-black border-2 border-transparent  md:px-6 p-1.5 px-6 py-3 hover:scale-100 rounded-lg">
+                    className="text-[17px] bg-white bg-opacity-10 flex text-black border-2 border-transparent  md:px-6 p-1.5 px-5 py-2 md:py-3 hover:scale-100 rounded-lg">
                     Early Access<span>
                       <img className="h-4 mt-1 pl-4" src={Arrow} /></span></button>
 
@@ -748,7 +750,7 @@ const IndexPage = () => {
           <section className='pb-20'>
             <div className='flex md:flex-row flex-col justify-center pt-16 mb-6'>
 
-              <div className="bg-white bg-opacity-90 flex flex-col rounded-xl shadow-10xl w-[25%] mr-[10vw] pt-6 space-y-4">
+              <div className="bg-white bg-opacity-90 flex flex-col rounded-xl shadow-10xl md:w-[25%] mr-[10vw] pt-6 space-y-4">
                 <div className='flex flex-row ml-8 items-center'>
                   <img className='h-[55px] w-[42px] mr-6' src={Globe} />
                   <h1 className='text-[30px] text-[#303F47]'>Early Access</h1>
@@ -789,7 +791,7 @@ const IndexPage = () => {
               </div>
 
 
-              <div className="bg-white bg-opacity-90 flex flex-col rounded-xl shadow-10xl w-[25%] pt-6 space-y-4">
+              <div className="bg-white bg-opacity-90 flex flex-col rounded-xl shadow-10xl md:w-[25%] pt-6 space-y-4">
                 <div className='flex flex-row ml-8 items-center'>
                   <img className='h-[42px] w-[53px] mr-6' src={Logo} />
                   <h1 className='text-[30px] text-[#303F47]'>Pro Version</h1>
